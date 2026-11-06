@@ -1,11 +1,11 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class UiHelper {
-  static CustomImage({required String img}) {
+  static Widget customImage({required String img}) {
     return Image.asset("assets/images/$img");
   }
 
-  static CustomText({
+  static Widget customText({
     required String text,
     required Color color,
     required FontWeight fontweight,
@@ -16,7 +16,7 @@ class UiHelper {
       text,
       style: TextStyle(
         fontSize: fontsize,
-        fontFamily: fontfamily ?? "regular",
+        fontFamily: fontfamily ?? "Regular",
         fontWeight: fontweight,
         color: color,
       ),

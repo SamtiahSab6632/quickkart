@@ -33,6 +33,13 @@ migrate_working_dir/
 /build/
 /coverage/
 
+# Gemini API key for the AI assistant — keep out of version control.
+# Copy config/ai_key.example.json to config/ai_key.json and paste your key.
+/config/ai_key.json
+
+# Internship report (kept locally, not part of the public repository)
+/report/
+
 # Symbolication related
 app.*.symbols
 

@@ -1,5 +1,5 @@
-name: blinkit_clone
-description: "A new Flutter project."
+name: quick_kart
+description: "QuickKart - daily essentials delivered in minutes."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  image_picker: ^1.2.3
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +46,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -60,6 +62,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/icon/
+    - assets/products/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -82,8 +86,45 @@ flutter:
     - family: Regular
       fonts:
          - asset: assets/fonts/Poppins-Regular.ttf
+    - family: SemiBold
+      fonts:
+         - asset: assets/fonts/Poppins-SemiBold.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+flutter_native_splash:
+  color: "#FF5A1F"
+  image: assets/images/quickkart_splash_lockup.png
+  color_dark: "#FF5A1F"
+  image_dark: assets/images/quickkart_splash_lockup.png
+
+  android_12:
+    color: "#FF5A1F"
+    image: assets/images/quickkart_splash_lockup_android12.png
+    color_dark: "#FF5A1F"
+    image_dark: assets/images/quickkart_splash_lockup_android12.png
+    icon_background_color: "#FF5A1F"
+    icon_background_color_dark: "#FF5A1F"
+
+  web: false
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/quickkart_icon.png"
+  adaptive_icon_background: "#FF5A1F"
+  adaptive_icon_foreground: "assets/icon/quickkart_icon_foreground.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icon/quickkart_icon.png"
+    background_color: "#FF5A1F"
+    theme_color: "#FF5A1F"
+  windows:
+    generate: true
+    image_path: "assets/icon/quickkart_icon.png"
+    icon_size: 48

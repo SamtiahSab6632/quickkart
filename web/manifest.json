@@ -1,11 +1,11 @@
 {
-    "name": "blinkit_clone",
-    "short_name": "blinkit_clone",
+    "name": "QuickKart",
+    "short_name": "QuickKart",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FF5A1F",
+    "theme_color": "#FF5A1F",
+    "description": "QuickKart - daily essentials delivered in minutes.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
